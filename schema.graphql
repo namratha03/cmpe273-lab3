@@ -1,0 +1,12 @@
+type Query {
+    student_with_id(_id: ID!): Student
+}
+
+type Student {
+    studentId: String!
+    name: String!
+}
+
+type Mutation {
+        create_Student(studentName: String!): Student!
+}        
